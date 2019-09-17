@@ -67,7 +67,7 @@ var stripeHandler = StripeCheckout.configure({
             console.error(error)
         })
     }
-})
+});
 
 function purchaseClicked() {
     var priceElement = document.getElementsByClassName('cart-total-price')[0]

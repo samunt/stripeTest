@@ -1,40 +1,40 @@
 {
-  "music": [
+  "insurance": [
     {
       "id": 1,
-      "name": "Album 1",
-      "price": 1299,
-      "imgName": "Album 1.png"
+      "name": "Assurity Century+ DI",
+      "price": 6499,
+      "imgName": "Shirt.png"
     },
     {
       "id": 2,
-      "name": "Album 2",
-      "price": 1499,
-      "imgName": "Album 2.png"
+      "name": "Assurity Simplified DI",
+      "price": 7599,
+      "imgName": "Shirt.png"
     },
     {
       "id": 3,
-      "name": "Album 3",
-      "price": 999,
-      "imgName": "Album 3.png"
+      "name": "Assurity CI",
+      "price": 9999,
+      "imgName": "Shirt.png"
     },
     {
       "id": 4,
-      "name": "Album 4",
+      "name": "Assurity Term 20",
       "price": 1999,
-      "imgName": "Album 4.png"
+      "imgName": "Shirt.png"
     }
   ],
-  "merch": [
+  "riders": [
     {
       "id": 5,
-      "name": "T-Shirt",
+      "name": "Die Immediately and get $",
       "price": 1999,
       "imgName": "Shirt.png"
     },
     {
       "id": 6,
-      "name": "Coffee Cup",
+      "name": "Premium Refund if dead",
       "price": 699,
       "imgName": "Cofee.png"
     }

@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Generics | Store</title>
+        <title>Finaeo Test Environment</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css" />
         <script src="https://checkout.stripe.com/checkout.js" defer></script>
         <script>
-            var stripePublicKey = '<%= stripePublicKey %>'
+            var stripePublicKey = 'pk_test_2VFKqV9ea5sGhH4G1t8yCViw00V2QV015k'
         </script>
         <script src="store.js" defer></script>
     </head>
     <body>
         <header class="main-header">
-            <nav class="main-nav nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-            </nav>
-            <h1 class="band-name band-name-large">The Generics</h1>
+            <h1 class="band-name band-name-large">Stripe Test</h1>
         </header>
         <section class="container content-section">
-            <h2 class="section-header">MUSIC</h2>
+            <h2 class="section-header">Insurance</h2>
             <div class="shop-items">
-                <% items.music.forEach(function(item){ %>
+                <% items.insurance.forEach(function(item){ %>
                     <div class="shop-item" data-item-id="<%= item.id %>">
                         <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
@@ -37,9 +30,9 @@
             </div>
         </section>
         <section class="container content-section">
-            <h2 class="section-header">MERCH</h2>
+            <h2 class="section-header">Riders</h2>
             <div class="shop-items">
-                <% items.merch.forEach(function(item){ %>
+                <% items.riders.forEach(function(item){ %>
                     <div class="shop-item" data-item-id="<%= item.id %>">
                         <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
@@ -68,7 +61,7 @@
         </section>
         <footer class="main-footer">
             <div class="container main-footer-container">
-                <h3 class="band-name">The Generics</h3>
+                <h3 class="band-name">Finaeo-Stripe</h3>
                 <ul class="nav footer-nav">
                     <li>
                         <a href="https://www.youtube.com" target="_blank">
