@@ -34,6 +34,7 @@ app.post('/purchase', function(req, res) {
     } else {
       const itemsJson = JSON.parse(data)
       const itemsArray = itemsJson.insurance.concat(itemsJson.riders);
+      const randInt = Math.floor(Math.random() * Math.floor(99999999));
       let total = 0;
       req.body.items.forEach(function(item) {
         const itemJson = itemsArray.find(function(i) {
@@ -41,10 +42,10 @@ app.post('/purchase', function(req, res) {
         });
         total = total + itemJson.price * item.quantity
       });
-
       stripe.charges.create({
         amount: total,
         source: req.body.stripeTokenId,
+        metadata: {assurity_customer: randInt},
         currency: 'usd'
       }).then(function() {
         console.log('Charge Successful');
